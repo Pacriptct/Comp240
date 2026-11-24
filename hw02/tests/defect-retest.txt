@@ -1,0 +1,30 @@
+Defect: readNonBlank still had the starter's placeholder condition (false).
+Input: 3, PKG-1001, Dylan McLean, L101, 0
+
+Before fix:
+1. Display lockers
+2. Search locker by ID
+3. Assign package
+4. Pick up package
+5. Display active packages
+0. Exit
+Choose an option: Tracking ID: Value cannot be blank.
+Tracking ID: Value cannot be blank.
+Tracking ID: Value cannot be blank.
+Tracking ID: Value cannot be blank.
+Tracking ID: Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at LockerApp.readNonBlank(LockerApp.java:137)
+	at LockerApp.assignPackage(LockerApp.java:94)
+	at LockerApp.main(LockerApp.java:28)
+
+After fix (same input, then 1 to show lockers):
+Choose an option: Tracking ID: Recipient name: Locker ID: Assigned package PKG-1001 for Dylan McLean to locker L101 (Student Center).
+
+Choose an option: L101 | Student Center | SMALL | OCCUPIED
+L102 | Student Center | MEDIUM | AVAILABLE
+L201 | Library | LARGE | AVAILABLE
+L202 | Library | MEDIUM | AVAILABLE
+
+Choose an option: 
+Locker Tracker ended.
