@@ -1,0 +1,78 @@
+##### A1 typical: 20 / 150 / 0.10
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $20.00
+Planned pages:           150
+Average cost per page:   $0.10
+Projected charge:        $15.00
+Credit difference:       $5.00
+(positive = credit left over, negative = over your credit)
+##### A2 over: 10 / 300 / 0.10
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $10.00
+Planned pages:           300
+Average cost per page:   $0.10
+Projected charge:        $30.00
+Credit difference:       $-20.00
+(positive = credit left over, negative = over your credit)
+##### A3 zero pages: 15 / 0 / 0.08
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $15.00
+Planned pages:           0
+Average cost per page:   $0.08
+Projected charge:        $0.00
+Credit difference:       $15.00
+(positive = credit left over, negative = over your credit)
+##### A4 decimal: 12.75 / 47 / 0.065
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $12.75
+Planned pages:           47
+Average cost per page:   $0.07
+Projected charge:        $3.06
+Credit difference:       $9.70
+(positive = credit left over, negative = over your credit)
+##### A5 exact match: 5 / 50 / 0.10
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $5.00
+Planned pages:           50
+Average cost per page:   $0.10
+Projected charge:        $5.00
+Credit difference:       $0.00
+(positive = credit left over, negative = over your credit)
+##### Debug 2 retest: 20 (no $) / 150 / 0.10
+=== Campus Printing Credit Snapshot ===
+This estimates whether your planned printing fits in your weekly credit.
+Enter numbers only (no $ sign). Pages must be a whole number.
+
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $20.00
+Planned pages:           150
+Average cost per page:   $0.10
+Projected charge:        $15.00
+Credit difference:       $5.00
+(positive = credit left over, negative = over your credit)

@@ -1,0 +1,27 @@
+Debug 1, before fix (methods still returned 0.0):
+=== Campus Printing Credit Snapshot ===
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $
+--- Printing Credit Snapshot ---
+Weekly print credit:     $20.00
+Planned pages:           150
+Average cost per page:   $0.10
+Projected charge:        $0.00
+Credit difference:       $0.00
+(positive = credit left over, negative = over your credit)
+
+Debug 1, after fix:
+--- Printing Credit Snapshot ---
+Weekly print credit:     $20.00
+Planned pages:           150
+Average cost per page:   $0.10
+Projected charge:        $15.00
+Credit difference:       $5.00
+(positive = credit left over, negative = over your credit)
+
+Debug 2, typing $20 for credit:
+=== Campus Printing Credit Snapshot ===
+Enter your weekly printing credit: $Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947)
+	at java.base/java.util.Scanner.next(Scanner.java:1602)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2573)
+	at CampusPrintCreditPlanner.main(CampusPrintCreditPlanner.java:19)
