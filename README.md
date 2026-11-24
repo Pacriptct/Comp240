@@ -16,4 +16,4 @@ javac -d out src/*.java
 java -cp out <MainClass>
 ```
 
-Each project folder has its own README (with UML) and test evidence.
+Each project folder has its own README and test evidence.
