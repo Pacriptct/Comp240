@@ -1,0 +1,128 @@
+########## B1 HW01A regression: credit 20, cost 0.10, 1 job of 150 pages, then n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1: 
+----- Printing Plan Summary -----
+Weekly print credit:     $20.00
+Average cost per page:   $0.10
+Print jobs:              1
+Total pages:             150
+Average pages per job:   150.00
+Projected charge:        $15.00
+Status:                  CREDIT REMAINS
+Credit remaining:        $5.00
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
+########## B2 credit remains: credit 10, cost 0.08, 3 jobs 25/40/15, then n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1:   Pages for job 2:   Pages for job 3: 
+----- Printing Plan Summary -----
+Weekly print credit:     $10.00
+Average cost per page:   $0.08
+Print jobs:              3
+Total pages:             80
+Average pages per job:   26.67
+Projected charge:        $6.40
+Status:                  CREDIT REMAINS
+Credit remaining:        $3.60
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
+########## B3 credit exceeded: credit 5, cost 0.10, 2 jobs 40/35, then n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1:   Pages for job 2: 
+----- Printing Plan Summary -----
+Weekly print credit:     $5.00
+Average cost per page:   $0.10
+Print jobs:              2
+Total pages:             75
+Average pages per job:   37.50
+Projected charge:        $7.50
+Status:                  CREDIT EXCEEDED
+Amount over credit:      $2.50
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
+########## B4 exact boundary: credit 0.30, cost 0.10, 2 jobs 1/2, then n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1:   Pages for job 2: 
+----- Printing Plan Summary -----
+Weekly print credit:     $0.30
+Average cost per page:   $0.10
+Print jobs:              2
+Total pages:             3
+Average pages per job:   1.50
+Projected charge:        $0.30
+Status:                  CREDIT EXACTLY USED
+Credit remaining:        $0.00
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
+########## B5 invalid input: credit -5, abc, 10 | cost -0.05, 0.10 | jobs 0, -2, 2 | job1 -3, 30 | job2 20 | n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $  Value cannot be negative. Try again.
+Enter your weekly printing credit: $  "abc" is not a number. Try again.
+Enter your weekly printing credit: $Enter the average cost per page: $  Value cannot be negative. Try again.
+Enter the average cost per page: $How many print jobs are you planning?   Must be at least 1. Try again.
+How many print jobs are you planning?   Must be at least 1. Try again.
+How many print jobs are you planning?   Pages for job 1:   Page count cannot be negative. Try again.
+  Pages for job 1:   Pages for job 2: 
+----- Printing Plan Summary -----
+Weekly print credit:     $10.00
+Average cost per page:   $0.10
+Print jobs:              2
+Total pages:             50
+Average pages per job:   25.00
+Projected charge:        $5.00
+Status:                  CREDIT REMAINS
+Credit remaining:        $5.00
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
+########## B6 repeated workflow: session 1 (20, 0.10, 1 job 50), y, session 2 (5, 0.25, 2 jobs 10/15), maybe, n
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1: 
+----- Printing Plan Summary -----
+Weekly print credit:     $20.00
+Average cost per page:   $0.10
+Print jobs:              1
+Total pages:             50
+Average pages per job:   50.00
+Projected charge:        $5.00
+Status:                  CREDIT REMAINS
+Credit remaining:        $15.00
+---------------------------------
+Plan another printing session? (y/n): 
+--- Planning Session 2 ---
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1:   Pages for job 2: 
+----- Printing Plan Summary -----
+Weekly print credit:     $5.00
+Average cost per page:   $0.25
+Print jobs:              2
+Total pages:             25
+Average pages per job:   12.50
+Projected charge:        $6.25
+Status:                  CREDIT EXCEEDED
+Amount over credit:      $1.25
+---------------------------------
+Plan another printing session? (y/n):   Please enter y or n.
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
