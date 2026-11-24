@@ -1,24 +1,100 @@
-# COMP 240: Object-Oriented Programming (Java)
+# COMP 240: Object-Oriented Programming in Java
 
-Coursework from COMP 240 at Wittenberg University. Each project is self-contained in its own folder and compiles on its own.
+Coursework from COMP 240 at Wittenberg University (Fall 2026). The assignments start with basic console programs and build up to a Swing banking app with saved data, undo, and automated tests. Each assignment is in its own folder, compiles on its own, and includes its own README and test evidence.
 
-| Project | What it is | Concepts |
+**Author:** Dylan McLean ([@Pacriptct](https://github.com/Pacriptct))
+
+## Highlights
+
+**[Project 3: BankApp](project03/)** *(group project)*
+A Swing banking app with customer signup, checking and savings accounts, deposits, withdrawals, transfers, transaction history, and undo. It saves its data as CSV or Java serialization, writes to a temp file first so a crash can't corrupt the save, and refuses to load a damaged file instead of overwriting it. Money is stored as `BigDecimal`, and 22 automated tests cover the rules and storage.
+
+**[Project 2: Smart Transit Fare Engine](project02/)** *(group project)*
+Processes rides for five pass types, each with its own fare rule, through one polymorphic workflow. It uses an abstract base class, an interface, and method overriding, and the manager never checks which type of pass it has. I wrote two of the pass types from scratch.
+
+**[Project 1: Campus Resource Reservation System](project01/)**
+Books study rooms, labs, and courts. It checks capacity and time-slot conflicts and validates every request before changing anything. It has 39 direct class tests plus a scripted run through the console menu.
+
+## All assignments
+
+| Assignment | What it does | Main concepts |
 |---|---|---|
-| [HW01A](hw01a/) | Campus Printing Credit Snapshot: estimates whether planned printing fits in a weekly print credit | Variables and data types, Scanner input, arithmetic, methods with parameters and return values, formatted output |
-| [HW01B](hw01b/) | Campus Printing Credit Planner: extends HW01A to handle multiple print jobs, credit status, input validation, and repeated sessions | if/else decisions, for and while loops, accumulators, input validation and re-prompting, method decomposition, floating-point boundary handling |
-| [HW02](hw02/) | Campus Package Locker Tracker: assign packages to campus lockers and pick them up, with duplicate and occupied-locker checks | Classes and constructors, encapsulation, HAS-A association, ArrayList collections, manager-owned rules, UML |
-| [HW03](hw03/) | Campus Parking Permit Manager: tracks permits with zone filtering, active counts, and deactivation | Fixed arrays vs ArrayList, traversal, search by ID, filtering, counting, manager-owned state changes |
-| [Lab W02](lab-w02/) | Campus Commute Cost Estimator: weekly commute fuel cost with LOW/MODERATE/HIGH classification and report modes | if/else-if/else with named constants, traditional switch, while-loop validation, method decomposition, boundary testing |
-| [Project 1](project01/) | Campus Resource Reservation System: console app for booking study rooms, labs, and courts with capacity and time-slot conflict checks | Classes and objects, encapsulation, constructor validation, HAS-A association, ArrayList collections, searching, validate-before-mutation, input validation |
-| [Project 2](project02/) | Smart Transit Fare & Pass Processing Engine: processes rides for five pass types, each with its own fare rule, through one polymorphic workflow | Inheritance, abstract classes, interfaces, method overriding, polymorphism / dynamic dispatch, constructor chaining, UML |
-| [Project 3](project03/) | BankApp: Swing banking app with customers, checking and savings accounts, transfers, undo, and saved state | Abstract classes, interfaces, enums, exceptions, file I/O (CSV and serialization), GUI/controller separation, automated tests |
+| [Lab W02](lab-w02/) | Campus commute fuel cost estimator with a LOW / MODERATE / HIGH rating | if/else chains, named constants, `switch`, while-loop validation, methods |
+| [HW01A](hw01a/) | Checks whether planned printing fits in a weekly print credit | Variables and types, `Scanner` input, arithmetic, methods, formatted output |
+| [HW01B](hw01b/) | Extends HW01A to handle multiple print jobs, repeat sessions, and bad input | Loops, accumulators, input validation, decomposition, floating-point boundaries |
+| [HW02](hw02/) | Campus package locker tracker: assign packages and pick them up | Classes, constructors, encapsulation, HAS-A, `ArrayList`, UML |
+| [HW03](hw03/) | Campus parking permit manager with zone filtering and deactivation | Arrays vs `ArrayList`, search, filter, count, manager-owned rules |
+| [Project 1](project01/) | Campus resource reservation system | Object collaboration, validate before mutating, searching, UML |
+| [Project 2](project02/) *(group)* | Transit fare engine for five pass types | Inheritance, abstract classes, interfaces, overriding, polymorphism |
+| [Project 3](project03/) *(group)* | Swing banking app with saved state and undo | GUI/controller split, file I/O, exceptions, collections, records, enums, tests |
 
-## Running a project
+## Skills
+
+### Object-oriented design
+- **Encapsulation:** private fields, read-only getters, and constructors that reject bad values, so an object can't end up in an invalid state (HW02, Project 1, Project 3)
+- **Composition (HAS-A):** objects that hold references to other objects instead of copying their data, like a reservation holding its room or a package record holding its locker (HW02, Project 1, Project 2)
+- **Inheritance and abstract classes:** shared state and behavior in a parent class, with subclasses that only add what's different (Project 2: `TransitPass`, Project 3: `BankAccount`)
+- **Interfaces:** contracts like `DiscountEligible`, `AccountOperations`, and `Storage` that let different classes be used the same way (Project 2, Project 3)
+- **Polymorphism:** one loop or method call that works on every subtype, with no `instanceof` checks (Project 2)
+- **Separation of concerns:** the UI only reads input and prints, and a manager or controller class owns the data and rules (every multi-class assignment)
+
+### Java language and libraries
+- Collections: `ArrayList`, `LinkedList`, `Queue`, `Deque` as a stack (for undo), fixed arrays, and sorting with `Comparator`
+- `BigDecimal` for money, `LocalDateTime` for timestamps, records, and enums (Project 3)
+- Exceptions: throwing them for invalid state and catching them so bad input doesn't crash the program (Project 2, Project 3)
+- File I/O: CSV reading and writing, Java object serialization, and atomic saves through a temp file (Project 3)
+- Swing GUI wired to a controller (Project 3)
+- Console input with `Scanner`, re-prompting on invalid input (all console assignments)
+
+### Testing and debugging
+- Test plans that cover normal, boundary, invalid, and regression cases, recorded against the real program output
+- Automated test classes in plain Java with no libraries (Project 1: 39 checks, Project 3: 22 tests)
+- Documented defects with the observed problem, how I narrowed it down, the fix, and the retest. Examples include a floating-point equality bug where `3 * 0.10` came out as `0.30000000000000004` (HW01B) and a negative fare that crashed the program (Project 2)
+
+### Tools and workflow
+- Compiling and running with `javac` and `java` from the command line
+- Git with one branch per assignment, merged into `main`
+- UML class diagrams that match the code (HW02, Project 1, Project 2)
+
+## Skills by assignment
+
+| Skill | Lab W02 | HW01A | HW01B | HW02 | HW03 | Proj 1 | Proj 2 | Proj 3 |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Methods and decomposition | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Decisions and loops | ✓ | | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Input validation | ✓ | | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Classes and encapsulation | | | | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HAS-A composition | | | | ✓ | | ✓ | ✓ | ✓ |
+| ArrayList / collections | | | | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Inheritance and abstract classes | | | | | | | ✓ | ✓ |
+| Interfaces and polymorphism | | | | | | | ✓ | ✓ |
+| Exceptions | | | | ✓ | ✓ | ✓ | ✓ | ✓ |
+| File I/O and persistence | | | | | | | | ✓ |
+| GUI (Swing) | | | | | | | | ✓ |
+| UML | | | | ✓ | | ✓ | ✓ | |
+| Automated tests | | | | | | ✓ | | ✓ |
+| Documented test evidence | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## Running an assignment
+
+Requires JDK 17 or newer.
 
 ```
-cd <project folder>
+cd <assignment folder>
 javac -d out src/*.java
 java -cp out <MainClass>
 ```
 
-Each project folder has its own README and test evidence.
+| Folder | Main class |
+|---|---|
+| `lab-w02` | `CampusCommute` |
+| `hw01a`, `hw01b` | `CampusPrintCreditPlanner` |
+| `hw02` | `LockerApp` |
+| `hw03` | `ParkingPermitApp` |
+| `project01` | `CampusReservationApp` |
+| `project02` | `TransitFareApp` |
+| `project03` | Uses a package, see [its README](project03/README.md) |
+
+## About the code
+
+All assignments started from instructor-provided starter code, usually a partial skeleton with TODOs to complete. Where it was included, the original course handout is in the assignment's `course-files/` or `docs/` folder. Projects 2 and 3 were group projects.
