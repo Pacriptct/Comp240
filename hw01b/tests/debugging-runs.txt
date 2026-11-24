@@ -1,0 +1,30 @@
+Debug 1: stage 2 boundary test (credit 0.30, 3 pages at 0.10) before the fix:
+## 0.30 3 0.10
+Enter your weekly printing credit: $Enter the number of pages you plan to print: Enter the average cost per page: $Projected charge:  $0.30
+Credit difference: $-0.00
+Status: CREDIT EXCEEDED
+
+Raw double values:
+3 * 0.10 = 0.30000000000000004
+0.30 - (3 * 0.10) = -5.551115123125783E-17
+Math.round((0.30 - 3*0.10) * 100) = 0
+
+Debug 2: $20 typed for credit, after adding readNonNegativeDouble:
+=== Campus Printing Credit Planner ===
+Plan your printing for the week and see if it fits in your credit.
+Enter numbers only (no $ sign).
+
+--- Planning Session 1 ---
+Enter your weekly printing credit: $  "$20" is not a number. Try again.
+Enter your weekly printing credit: $Enter the average cost per page: $How many print jobs are you planning?   Pages for job 1: 
+----- Printing Plan Summary -----
+Weekly print credit:     $20.00
+Average cost per page:   $0.10
+Print jobs:              1
+Total pages:             150
+Average pages per job:   150.00
+Projected charge:        $15.00
+Status:                  CREDIT REMAINS
+Credit remaining:        $5.00
+---------------------------------
+Plan another printing session? (y/n): Goodbye! Campus Printing Credit Planner ended.
