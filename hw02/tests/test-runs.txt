@@ -1,0 +1,75 @@
+########## T1 display seeded lockers: 1
+Choose an option: L101 | Student Center | SMALL | AVAILABLE
+L102 | Student Center | MEDIUM | AVAILABLE
+L201 | Library | LARGE | AVAILABLE
+L202 | Library | MEDIUM | AVAILABLE
+
+Choose an option: 
+Locker Tracker ended.
+########## T2 search existing (l201) + missing (L999): 2 l201, 2 L999
+Choose an option: Locker ID: L201 | Library | LARGE | AVAILABLE
+
+Choose an option: Locker ID: Locker not found.
+
+Choose an option: 
+Locker Tracker ended.
+########## T3 assign valid: 3 PKG-1001 / Dylan McLean / L101, then 1, then 5
+Choose an option: Tracking ID: Recipient name: Locker ID: Assigned package PKG-1001 for Dylan McLean to locker L101 (Student Center).
+
+Choose an option: L101 | Student Center | SMALL | OCCUPIED
+L102 | Student Center | MEDIUM | AVAILABLE
+L201 | Library | LARGE | AVAILABLE
+L202 | Library | MEDIUM | AVAILABLE
+
+Choose an option: PKG-1001 | recipient: Dylan McLean | locker: L101 (Student Center, SMALL)
+
+Choose an option: 
+Locker Tracker ended.
+########## T4 rejections: assign PKG-1001 to L101, then duplicate PKG-1001 to L102, then PKG-2002 to occupied L101, then PKG-3003 to missing L999, then 1 and 5
+Choose an option: Tracking ID: Recipient name: Locker ID: Assigned package PKG-1001 for Dylan McLean to locker L101 (Student Center).
+
+Choose an option: Tracking ID: Recipient name: Locker ID: Rejected: tracking ID PKG-1001 is already assigned to a locker.
+
+Choose an option: Tracking ID: Recipient name: Locker ID: Rejected: locker L101 is already occupied.
+
+Choose an option: Tracking ID: Recipient name: Locker ID: Rejected: locker L999 does not exist.
+
+Choose an option: L101 | Student Center | SMALL | OCCUPIED
+L102 | Student Center | MEDIUM | AVAILABLE
+L201 | Library | LARGE | AVAILABLE
+L202 | Library | MEDIUM | AVAILABLE
+
+Choose an option: PKG-1001 | recipient: Dylan McLean | locker: L101 (Student Center, SMALL)
+
+Choose an option: 
+Locker Tracker ended.
+########## T5 pickup: assign PKG-1001 to L101, assign PKG-2002 to L201, pick up pkg-1001, pick up PKG-1001 again, then 1 and 5
+Choose an option: Tracking ID: Recipient name: Locker ID: Assigned package PKG-1001 for Dylan McLean to locker L101 (Student Center).
+
+Choose an option: Tracking ID: Recipient name: Locker ID: Assigned package PKG-2002 for Jordan Smith to locker L201 (Library).
+
+Choose an option: Tracking ID to pick up: Package PKG-1001 picked up by Dylan McLean. Locker L101 is now available.
+
+Choose an option: Tracking ID to pick up: No active package found with tracking ID PKG-1001.
+
+Choose an option: L101 | Student Center | SMALL | AVAILABLE
+L102 | Student Center | MEDIUM | AVAILABLE
+L201 | Library | LARGE | OCCUPIED
+L202 | Library | MEDIUM | AVAILABLE
+
+Choose an option: PKG-2002 | recipient: Jordan Smith | locker: L201 (Library, LARGE)
+
+Choose an option: 
+Locker Tracker ended.
+########## T6 invalid input + exit: abc, blank, 9, then 3 with blank tracking ID then PKG-4004 / Sam Park / L202, then 5, then 0
+Choose an option: Please enter a valid integer.
+Choose an option: Please enter a valid integer.
+Choose an option: Unsupported choice.
+
+Choose an option: Tracking ID: Value cannot be blank.
+Tracking ID: Recipient name: Locker ID: Assigned package PKG-4004 for Sam Park to locker L202 (Library).
+
+Choose an option: PKG-4004 | recipient: Sam Park | locker: L202 (Library, MEDIUM)
+
+Choose an option: 
+Locker Tracker ended.

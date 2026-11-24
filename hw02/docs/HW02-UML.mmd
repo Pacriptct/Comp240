@@ -1,0 +1,55 @@
+classDiagram
+    direction LR
+    class LockerApp {
+        -Scanner INPUT$
+        -LockerManager MANAGER$
+        +main(String[] args) void
+        -seedLockers() void
+        -displayMenu() void
+        -displayLockers() void
+        -searchLocker() void
+        -assignPackage() void
+        -pickupPackage() void
+        -displayPackages() void
+        -readInt(String prompt) int
+        -readNonBlank(String prompt) String
+    }
+    class LockerManager {
+        -ArrayList~PackageLocker~ lockers
+        -ArrayList~PackageRecord~ records
+        +addLocker(PackageLocker locker) boolean
+        +findLockerById(String lockerId) PackageLocker
+        +findRecordByTrackingId(String trackingId) PackageRecord
+        +assignPackage(String trackingId, String recipient, String lockerId) String
+        +pickupPackage(String trackingId) String
+        +getLockers() ArrayList~PackageLocker~
+        +getRecords() ArrayList~PackageRecord~
+    }
+    class PackageRecord {
+        -String trackingId
+        -String recipient
+        -PackageLocker locker
+        +PackageRecord(String trackingId, String recipient, PackageLocker locker)
+        +getTrackingId() String
+        +getRecipient() String
+        +getLocker() PackageLocker
+        +toString() String
+    }
+    class PackageLocker {
+        -String lockerId
+        -String location
+        -String sizeCategory
+        -boolean occupied
+        +PackageLocker(String lockerId, String location, String sizeCategory)
+        +getLockerId() String
+        +getLocation() String
+        +getSizeCategory() String
+        +isOccupied() boolean
+        +markOccupied() void
+        +markAvailable() void
+        +toString() String
+    }
+    LockerApp --> "1" LockerManager : uses
+    LockerManager "1" o-- "0..*" PackageLocker : owns
+    LockerManager "1" o-- "0..*" PackageRecord : owns
+    PackageRecord "0..1" --> "1" PackageLocker : has-a (stored in)
