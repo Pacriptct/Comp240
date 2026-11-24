@@ -1,3 +1,11 @@
 out/
 *.class
 .DS_Store
+bin/
+
+# Project 3 runtime save files
+project03/data/*.ser
+project03/data/*.tmp
+.idea/
+*.iml
+.vscode/
