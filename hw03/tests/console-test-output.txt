@@ -1,0 +1,208 @@
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: S-101 | Avery Lee | Student | Zone A | $45.00 | ACTIVE
+S-102 | Jordan Smith | Student | Zone B | $35.00 | ACTIVE
+F-201 | Dr. Rivera | Faculty | Zone A | $75.00 | ACTIVE
+F-202 | Dr. Chen | Faculty | Zone C | $75.00 | ACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID: S-101 | Avery Lee | Student | Zone A | $45.00 | ACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID: Permit not found.
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Zone (A, B, or C): Permits in Zone A:
+S-101 | Avery Lee | Student | Zone A | $45.00 | ACTIVE
+F-201 | Dr. Rivera | Faculty | Zone A | $75.00 | ACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Zone (A, B, or C): Invalid zone "D". Valid zones are A, B, and C.
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Total permits:    4
+Active permits:   4
+Inactive permits: 0
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID to deactivate: Permit S-102 was deactivated.
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Total permits:    4
+Active permits:   3
+Inactive permits: 1
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID to deactivate: Rejected: permit S-102 was not found or is already inactive.
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID to deactivate: Rejected: permit Z-000 was not found or is already inactive.
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: S-101 | Avery Lee | Student | Zone A | $45.00 | ACTIVE
+F-201 | Dr. Rivera | Faculty | Zone A | $75.00 | ACTIVE
+F-202 | Dr. Chen | Faculty | Zone C | $75.00 | ACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Enter a whole number.
+Choose an option: Choose a valid option (0-6).
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: S-101 | Avery Lee | Student | Zone A | $45.00 | ACTIVE
+S-102 | Jordan Smith | Student | Zone B | $35.00 | INACTIVE
+F-201 | Dr. Rivera | Faculty | Zone A | $75.00 | ACTIVE
+F-202 | Dr. Chen | Faculty | Zone C | $75.00 | ACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Permit ID: S-102 | Jordan Smith | Student | Zone B | $35.00 | INACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: Zone (A, B, or C): Permits in Zone B:
+S-102 | Jordan Smith | Student | Zone B | $35.00 | INACTIVE
+
+================================
+ Campus Parking Permit Manager
+================================
+1. Display all permits
+2. Search permit by ID
+3. Display permits by zone
+4. Display permit summary
+5. Deactivate a permit
+6. Display active permits
+0. Exit
+Choose an option: 
+Campus Parking Permit Manager ended.

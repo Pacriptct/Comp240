@@ -5,6 +5,7 @@ Coursework from COMP 240 at Wittenberg University. Each project is self-containe
 | Project | What it is | Concepts |
 |---|---|---|
 | [Project 1](project01/) | Campus Resource Reservation System: console app for booking study rooms, labs, and courts with capacity and time-slot conflict checks | Classes and objects, encapsulation, constructor validation, HAS-A association, ArrayList collections, searching, validate-before-mutation, input validation |
+| [HW03](hw03/) | Campus Parking Permit Manager: tracks permits with zone filtering, active counts, and deactivation | Fixed arrays vs ArrayList, traversal, search by ID, filtering, counting, manager-owned state changes |
 
 ## Running a project
 
