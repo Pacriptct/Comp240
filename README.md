@@ -11,6 +11,7 @@ Coursework from COMP 240 at Wittenberg University. Each project is self-containe
 | [Lab W02](lab-w02/) | Campus Commute Cost Estimator: weekly commute fuel cost with LOW/MODERATE/HIGH classification and report modes | if/else-if/else with named constants, traditional switch, while-loop validation, method decomposition, boundary testing |
 | [Project 1](project01/) | Campus Resource Reservation System: console app for booking study rooms, labs, and courts with capacity and time-slot conflict checks | Classes and objects, encapsulation, constructor validation, HAS-A association, ArrayList collections, searching, validate-before-mutation, input validation |
 | [Project 2](project02/) | Smart Transit Fare & Pass Processing Engine: processes rides for five pass types, each with its own fare rule, through one polymorphic workflow | Inheritance, abstract classes, interfaces, method overriding, polymorphism / dynamic dispatch, constructor chaining, UML |
+| [Project 3](project03/) | BankApp: Swing banking app with customers, checking and savings accounts, transfers, undo, and saved state | Abstract classes, interfaces, enums, exceptions, file I/O (CSV and serialization), GUI/controller separation, automated tests |
 
 ## Running a project
 
