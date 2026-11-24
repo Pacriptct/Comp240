@@ -1,0 +1,46 @@
+COMP 240 PROJECT 1 — DEMO REFERENCE MAP
+Controlling demo deck:
+COMP240-PROJ01-INSTRUCTOR-LECTURE-v4.3-FINAL-QC.pptx
+
+STUDENT CLASS                 DEMO ANALOGUE                 REFERENCE SLIDES
+-------------------------------------------------------------------------------
+CampusResource.java           EquipmentItem.java            7–11
+  class responsibility / state                             7–8
+  constructor / invariants                                9
+  accessors + object-owned rule                           10
+  toString() / readable state                             11
+
+Reservation.java              Checkout.java                 12–15
+  transaction responsibility                              12
+  HAS-A association                                       13
+  constructor validation                                  14
+  accessors + object display                              15
+
+ReservationManager.java       CheckoutManager.java          16–22
+  collection ownership                                    16–17
+  add/find pattern                                         18
+  collection-wide search/rule                             19
+  validate-before-mutation                                20–21
+  remove + defensive-copy pattern                         22
+
+CampusReservationApp.java     EquipmentCheckoutApp.java     23–31
+  UI/coordinator role                                     23–24
+  repeated menu + switch dispatch                         25
+  seed/setup + menu                                       26
+  display/search workflows                                27
+  create/cancel workflows                                 28
+  collection display                                      29
+  robust integer input                                    30
+  nonblank validation                                     31
+
+SYSTEM-LEVEL REFERENCE
+----------------------
+Slides 32–33: compile/run and trace responsibility across collaborating classes.
+Slide 34: transfer the architecture to Student Project 1.
+Slides 35–43: test/evidence patterns.
+
+RULE FOR USING REFERENCES
+-------------------------
+The demo is an ANALOGOUS reference architecture, not the Project 1 answer.
+Map responsibilities and programming patterns; do not copy the equipment-domain
+implementation and simply rename identifiers.

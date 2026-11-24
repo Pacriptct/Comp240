@@ -1,0 +1,187 @@
+================================================
+      CAMPUS RESOURCE RESERVATION SYSTEM
+================================================
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: All resources (5):
+R101   | Study Room A       | Study Room   | Thomas Library 1st Floor   | capacity 4
+R102   | Study Room B       | Study Room   | Thomas Library 2nd Floor   | capacity 6
+L201   | Computer Lab       | Lab          | Science Center 210         | capacity 24
+C301   | Conference Room    | Meeting Room | Hollenbeck Hall 105        | capacity 12
+G401   | Basketball Court   | Athletic     | HPER Center                | capacity 20
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Enter resource ID: Found: R101   | Study Room A       | Study Room   | Thomas Library 1st Floor   | capacity 4
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Enter resource ID: No resource found with ID Z999.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Enter name, type, or location keyword: 2 match(es):
+R101   | Study Room A       | Study Room   | Thomas Library 1st Floor   | capacity 4
+R102   | Study Room B       | Study Room   | Thomas Library 2nd Floor   | capacity 6
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Enter name, type, or location keyword: No resources matched "pool".
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: SUCCESS: Reservation RES1 created for Dylan McLean at Study Room A on 2026-12-01 (10:00-11:00).
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: REJECTED: Study Room A is already reserved on 2026-12-01 (10:00-11:00) by reservation RES1.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: REJECTED: Study Room A holds up to 4 people, but the party size is 9.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: REJECTED: Reservation ID RES1 already exists.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: REJECTED: No resource found with ID X000.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID: Requester name: This field cannot be blank.
+Requester name: Resource ID: Date (YYYY-MM-DD): Time slot (ex: 10:00-11:00): Party size: Please enter a valid integer.
+Party size: Please enter a number greater than 0.
+Party size: SUCCESS: Reservation RES5 created for Sam Park at Conference Room on 2026-12-03 (13:00-14:00).
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: All reservations (2):
+RES1   | Dylan McLean   | Study Room A (R101) @ Thomas Library 1st Floor | 2026-12-01 10:00-11:00 | party of 3
+RES5   | Sam Park       | Conference Room (C301) @ Hollenbeck Hall 105 | 2026-12-03 13:00-14:00 | party of 8
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID to cancel: No reservation found with ID RES9.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Reservation ID to cancel: Reservation RES5 was cancelled.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: All reservations (1):
+RES1   | Dylan McLean   | Study Room A (R101) @ Thomas Library 1st Floor | 2026-12-01 10:00-11:00 | party of 3
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Unsupported menu choice.
+
+------------------ MENU -------------------
+1. Display all resources
+2. Search resource by ID
+3. Search resources by name/type
+4. Create reservation
+5. Cancel reservation
+6. Display reservations
+0. Exit
+Choose an option: Please enter a valid integer.
+Choose an option: 
+Reservation system ended.

@@ -1,0 +1,44 @@
+=== CampusResource ===
+PASS  T01 valid resource stores ID in uppercase
+PASS  T02 getters return stored values
+PASS  T03 blank ID rejected
+PASS  T04 null name rejected
+PASS  T05 blank type rejected
+PASS  T06 blank location rejected
+PASS  T07 zero capacity rejected
+PASS  T08 canAccommodate at capacity
+PASS  T09 canAccommodate over capacity is false
+PASS  T10 canAccommodate zero is false
+=== Reservation ===
+PASS  T11 reservation keeps HAS-A reference to the same resource object
+PASS  T12 getters return stored values
+PASS  T13 null resource rejected
+PASS  T14 blank requester rejected
+PASS  T15 nonpositive party size rejected
+PASS  T16 same resource/date/slot conflicts
+PASS  T17 different slot does not conflict
+PASS  T18 different date does not conflict
+PASS  T19 different resource does not conflict
+PASS  T20 toString shows associated resource name
+=== ReservationManager ===
+PASS  T21 addResource accepts new resource
+PASS  T22 addResource rejects null
+PASS  T23 addResource rejects duplicate ID
+PASS  T24 findResourceById is case-insensitive
+PASS  T25 findResourceById missing returns null
+PASS  T26 keyword search matches type
+PASS  T27 keyword search no match is empty
+PASS  T28 valid reservation succeeds
+PASS  T29 duplicate reservation ID rejected
+PASS  T30 missing resource rejected
+PASS  T31 over capacity rejected
+PASS  T32 conflicting reservation rejected
+PASS  T33 rejected requests did not change the list
+PASS  T34 same room, next slot succeeds
+PASS  T35 defensive copy protects internal list
+PASS  T36 cancel missing ID returns false
+PASS  T37 cancel existing ID returns true
+PASS  T38 cancelled reservation is gone
+PASS  T39 slot can be rebooked after cancel
+
+Passed: 39  Failed: 0
