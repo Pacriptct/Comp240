@@ -1,0 +1,92 @@
+classDiagram
+    direction TB
+    class TransitPass {
+        <<abstract>>
+        -String passId
+        -String holderName
+        -boolean active
+        +TransitPass(String passId, String holderName)
+        +getPassId() String
+        +getHolderName() String
+        +isActive() boolean
+        +deactivate() void
+        +calculateFare(double baseFare)* double
+        #validateBaseFare(double baseFare) void
+        +toString() String
+    }
+    class DiscountEligible {
+        <<interface>>
+        +discountRate() double
+    }
+    class StudentPass {
+        +StudentPass(String passId, String holderName)
+        +discountRate() double
+        +calculateFare(double baseFare) double
+    }
+    class EmployeePass {
+        +EmployeePass(String passId, String holderName)
+        +discountRate() double
+        +calculateFare(double baseFare) double
+    }
+    class SeniorPass {
+        +SeniorPass(String passId, String holderName)
+        +discountRate() double
+        +calculateFare(double baseFare) double
+    }
+    class CommunityPass {
+        +CommunityPass(String passId, String holderName)
+        +discountRate() double
+        +calculateFare(double baseFare) double
+    }
+    class VisitorPass {
+        +VisitorPass(String passId, String holderName)
+        +calculateFare(double baseFare) double
+    }
+    class TripRecord {
+        -String tripId
+        -TransitPass pass
+        -String route
+        -double baseFare
+        -double chargedFare
+        +TripRecord(String tripId, TransitPass pass, String route, double baseFare, double chargedFare)
+        +getTripId() String
+        +getPass() TransitPass
+        +getRoute() String
+        +getBaseFare() double
+        +getChargedFare() double
+        +toString() String
+    }
+    class FareManager {
+        -ArrayList~TransitPass~ passes
+        -ArrayList~TripRecord~ trips
+        +registerPass(TransitPass pass) boolean
+        +findPassById(String passId) TransitPass
+        -tripIdExists(String tripId) boolean
+        +processRide(String tripId, String passId, String route, double baseFare) String
+        +deactivatePass(String passId) boolean
+        +totalCollectedFare() double
+        +findTripsByPassId(String passId) ArrayList~TripRecord~
+        +getPasses() ArrayList~TransitPass~
+        +getTrips() ArrayList~TripRecord~
+    }
+    class TransitFareApp {
+        -Scanner INPUT$
+        -FareManager MANAGER$
+        +main(String[] args) void
+        -seed() void
+        -processRide() void
+        -displayTripsForPass() void
+    }
+    TransitPass <|-- StudentPass
+    TransitPass <|-- EmployeePass
+    TransitPass <|-- SeniorPass
+    TransitPass <|-- CommunityPass
+    TransitPass <|-- VisitorPass
+    DiscountEligible <|.. StudentPass
+    DiscountEligible <|.. EmployeePass
+    DiscountEligible <|.. SeniorPass
+    DiscountEligible <|.. CommunityPass
+    TripRecord --> "1" TransitPass : has-a
+    FareManager "1" o-- "0..*" TransitPass : owns
+    FareManager "1" o-- "0..*" TripRecord : owns
+    TransitFareApp --> FareManager : uses
