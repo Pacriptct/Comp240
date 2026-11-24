@@ -1,0 +1,4 @@
+AbstractCheck.java:3: error: TransitPass is abstract; cannot be instantiated
+        TransitPass p = new TransitPass("X1", "Nobody");
+                        ^
+1 error

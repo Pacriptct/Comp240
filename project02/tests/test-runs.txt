@@ -1,0 +1,76 @@
+########## N5 / P1: display all passes (1)
+Choice: S100 | Ava Student | StudentPass | ACTIVE
+E200 | Eli Employee | EmployeePass | ACTIVE
+V300 | Vera Visitor | VisitorPass | ACTIVE
+S400 | Sam Senior | SeniorPass | ACTIVE
+C500 | Cora Community | CommunityPass | ACTIVE
+Choice: Transit Fare Engine closed.
+########## P2: search existing (s400) and missing (X999)
+Choice: Pass ID: S400 | Sam Senior | SeniorPass | ACTIVE
+Choice: Pass ID: Pass not found.
+Choice: Transit Fare Engine closed.
+########## N1 N2 N3 N4 N6 + P3: rides through the normal workflow for all 5 pass types
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T1 processed for Sam Senior (SeniorPass). Base fare $10.00, charged fare $4.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T2 processed for Sam Senior (SeniorPass). Base fare $5.00, charged fare $2.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T3 processed for Cora Community (CommunityPass). Base fare $10.00, charged fare $7.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T4 processed for Cora Community (CommunityPass). Base fare $5.00, charged fare $3.50.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T5 processed for Ava Student (StudentPass). Base fare $10.00, charged fare $5.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T6 processed for Eli Employee (EmployeePass). Base fare $10.00, charged fare $2.50.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T7 processed for Vera Visitor (VisitorPass). Base fare $10.00, charged fare $10.00.
+Choice: T1 | S400 | Route 1 | base $10.00 | charged $4.00
+T2 | S400 | Route 1 | base $5.00 | charged $2.00
+T3 | C500 | Route 2 | base $10.00 | charged $7.00
+T4 | C500 | Route 2 | base $5.00 | charged $3.50
+T5 | S100 | Route 3 | base $10.00 | charged $5.00
+T6 | E200 | Route 3 | base $10.00 | charged $2.50
+T7 | V300 | Route 3 | base $10.00 | charged $10.00
+Choice: Total collected fare: $34.00
+Choice: Transit Fare Engine closed.
+########## N7: base fare 0 for SeniorPass and CommunityPass
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T1 processed for Sam Senior (SeniorPass). Base fare $0.00, charged fare $0.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T2 processed for Cora Community (CommunityPass). Base fare $0.00, charged fare $0.00.
+Choice: T1 | S400 | Route 1 | base $0.00 | charged $0.00
+T2 | C500 | Route 2 | base $0.00 | charged $0.00
+Choice: Transit Fare Engine closed.
+########## N8: negative base fare for SeniorPass and CommunityPass
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: Base fare cannot be negative.
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: Base fare cannot be negative.
+Choice: No successful trips recorded.
+Choice: Total collected fare: $0.00
+Choice: Transit Fare Engine closed.
+########## P4: duplicate trip ID, missing pass, blank-then-valid input, non-numeric fare
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T1 processed for Sam Senior (SeniorPass). Base fare $10.00, charged fare $4.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: trip ID is blank or has already been used.
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: no pass found with ID Z999.
+Choice: Trip ID: Value cannot be blank.
+Trip ID: Pass ID: Route: Base fare: Enter a numeric value.
+Base fare: Ride T3 processed for Cora Community (CommunityPass). Base fare $10.00, charged fare $7.00.
+Choice: T1 | S400 | Route 1 | base $10.00 | charged $4.00
+T3 | C500 | Route 2 | base $10.00 | charged $7.00
+Choice: Transit Fare Engine closed.
+########## P5: deactivate S400, then try a ride, deactivate missing pass
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T1 processed for Sam Senior (SeniorPass). Base fare $10.00, charged fare $4.00.
+Choice: Pass ID to deactivate: Pass deactivated.
+Choice: S100 | Ava Student | StudentPass | ACTIVE
+E200 | Eli Employee | EmployeePass | ACTIVE
+V300 | Vera Visitor | VisitorPass | ACTIVE
+S400 | Sam Senior | SeniorPass | INACTIVE
+C500 | Cora Community | CommunityPass | ACTIVE
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: pass S400 is inactive.
+Choice: Pass ID to deactivate: Pass not found.
+Choice: T1 | S400 | Route 1 | base $10.00 | charged $4.00
+Choice: Total collected fare: $4.00
+Choice: Transit Fare Engine closed.
+########## P6: summary + trips for one pass (C500), and a pass with no trips (E200)
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T1 processed for Cora Community (CommunityPass). Base fare $10.00, charged fare $7.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T2 processed for Sam Senior (SeniorPass). Base fare $10.00, charged fare $4.00.
+Choice: Trip ID: Pass ID: Route: Base fare: Ride T3 processed for Cora Community (CommunityPass). Base fare $5.00, charged fare $3.50.
+Choice: Total collected fare: $14.50
+Choice: Pass ID: T1 | C500 | Route 2 | base $10.00 | charged $7.00
+T3 | C500 | Route 2 | base $5.00 | charged $3.50
+Choice: Pass ID: No trips found for pass E200.
+Choice: Transit Fare Engine closed.
+########## P7: invalid menu input and exit
+Choice: Enter a whole number.
+Choice: Unknown menu choice.
+Choice: Transit Fare Engine closed.

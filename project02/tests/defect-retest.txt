@@ -1,0 +1,15 @@
+Defect: negative base fare crashed the program.
+Input: 3, T1, S400, Route 1, -5, then 4, then 0
+
+Before fix:
+Choice: Trip ID: Pass ID: Route: Base fare: Exception in thread "main" java.lang.IllegalArgumentException: Base fare cannot be negative.
+	at TransitPass.validateBaseFare(TransitPass.java:48)
+	at SeniorPass.calculateFare(SeniorPass.java:20)
+	at FareManager.processRide(FareManager.java:58)
+	at TransitFareApp.processRide(TransitFareApp.java:64)
+	at TransitFareApp.main(TransitFareApp.java:21)
+
+After fix (try/catch in FareManager.processRide):
+Choice: Trip ID: Pass ID: Route: Base fare: Rejected: Base fare cannot be negative.
+Choice: No successful trips recorded.
+Choice: Transit Fare Engine closed.
