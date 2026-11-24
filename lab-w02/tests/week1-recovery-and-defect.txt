@@ -1,0 +1,11 @@
+Week 1 recovery version (before any Week 2 changes)
+
+Known test 10 / 4.5 / 30 / 3.25:
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon: Fuel price per gallon: Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+
+Defect: 10 / 4.5 / 0 MPG / 3.25:
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon: Fuel price per gallon: Weekly miles: 45.0
+Estimated gallons: Infinity
+Estimated fuel cost: $Infinity

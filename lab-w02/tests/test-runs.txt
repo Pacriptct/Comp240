@@ -1,0 +1,88 @@
+########## T1 Normal / regression: 10, 4.5, 30, 3.25, report 1
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Miles: 45.0
+Fuel cost: $4.88
+Status: LOW
+########## T2a LOW->MODERATE boundary exactly $10: 10, 6, 30, 5.00, report 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 60.0
+Estimated gallons: 2.0
+Estimated fuel cost: $10.00
+Weekly commute cost status: MODERATE
+
+Report mode (1=summary, 2=cost only): Fuel cost: $10.00
+########## T2b just under $10: 10, 6, 30, 4.99, report 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 60.0
+Estimated gallons: 2.0
+Estimated fuel cost: $9.98
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Fuel cost: $9.98
+########## T3a MODERATE->HIGH boundary exactly $25: 10, 15, 30, 5.00, report 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 150.0
+Estimated gallons: 5.0
+Estimated fuel cost: $25.00
+Weekly commute cost status: MODERATE
+
+Report mode (1=summary, 2=cost only): Fuel cost: $25.00
+########## T3b just over $25: 10, 15, 30, 5.01, report 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 150.0
+Estimated gallons: 5.0
+Estimated fuel cost: $25.05
+Weekly commute cost status: HIGH
+
+Report mode (1=summary, 2=cost only): Fuel cost: $25.05
+########## T4 zero usage: 0, 4.5, 30, 3.25, report 1
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 0.0
+Estimated gallons: 0.0
+Estimated fuel cost: $0.00
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Miles: 0.0
+Fuel cost: $0.00
+Status: LOW
+########## T5 invalid MPG: 10, 4.5, then MPG 0, -5, 30, price 3.25, report 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): MPG must be greater than 0.
+Re-enter vehicle miles per gallon: MPG must be greater than 0.
+Re-enter vehicle miles per gallon: Fuel price per gallon: 
+Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Fuel cost: $4.88
+########## T6a report mode 1
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Miles: 45.0
+Fuel cost: $4.88
+Status: LOW
+########## T6b report mode 2
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Fuel cost: $4.88
+########## T6c report mode 7 (unsupported)
+Number of campus trips this week: Average miles per trip: Vehicle miles per gallon (> 0): Fuel price per gallon: 
+Weekly miles: 45.0
+Estimated gallons: 1.5
+Estimated fuel cost: $4.88
+Weekly commute cost status: LOW
+
+Report mode (1=summary, 2=cost only): Unknown report mode.
